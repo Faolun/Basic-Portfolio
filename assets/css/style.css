@@ -107,10 +107,33 @@ margin: 0 auto;
     margin: 0 15px 15px 0;
     border: 1px solid #777;
 }
+.portfolio-item {
+    position: relative;
+    background-color: rgba(0,0,0, .5);
+    margin-bottom:20px;
+    width: 45%;
+    float: left;
+    height: 250px;
+}
+
+.portfolio-item:nth-of-type(even) {
+float: right;
+}
+
+.portfolio-item h4 {
+    background: #4aaaa5;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+}
 .clearfix {
 display: block;
 clear: both;
 }
+
 
 #left-column, #right-column {
     background: white;
@@ -152,4 +175,35 @@ float: right;
 
 #right-column ul li img {
     width: 60px;
+}
+
+#port1 {
+    background: url('../images/port1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#port2 {
+    background: url('../images/port2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#port3 {
+    background: url('../images/port3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#port4 {
+    background: url('../images/port4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#port5 {
+    background: url('../images/port5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#port6 {
+    background: url('../images/port6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
