@@ -3,7 +3,7 @@
 }
 
 body {
-    background: url('../images/subtle_pattern.png') repeat;
+    background: url('../images/gaming-pattern.png') repeat;
     /* insert pattern of your choosing and rename or change this name to match */
     font-family: Arial, Helvetica, sans-serif;
     overflow: auto;
@@ -45,14 +45,24 @@ nav a {
     color: #333;
     font-size: 18px;
     padding: 5px 15px;
-    border-right: 2px solid #4aaaa5;
+    border-right: 1px solid #4aaaa5;
     text-decoration: none;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+nav a:hover {
+    background: #4aaaa5;
+    color: white;
 }
 
 nav ul li:last-child a {
     border-right: none;
     padding-right: none;
 }
+
+
 
 p {
     font-size: 16px;
@@ -91,10 +101,14 @@ footer {
     background: #666;
     border-top: 5px solid #4aaaa5;
     color:#ccc;
+    font-size: 12px;
     text-align: center;
-    padding: 40px;
+    padding-top: 35px;
+    padding-bottom: 5px;
     margin-top: 30px;
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .wrapper {
@@ -132,49 +146,26 @@ float: right;
 .clearfix {
 display: block;
 clear: both;
+margin-bottom:100px;
 }
 
-
-#left-column, #right-column {
-    background: white;
-    padding: 25px;
-    border: 2px solid #ccc;
-}
-
-#left-column {
-width: 650px;
+#content {
+background: white;
+padding: 25px;
+border: 2px solid #ccc;
+width: 960px;
 float: left;
 }
 
-#left-column h2 {
+#content h2 {
     font-size: 24px;
     padding: 15px 0;
     margin-bottom: 20px;
     border-bottom: 2px solid #ccc;
 }
 
-#right-column {
-width: 270px;
-float: right; 
-}
-
-#right-column h3 {
-    font-size: 20px;
-    padding: 15px 0;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #ccc;
-}
-
-#right-column ul {
-    text-align: center;
-}
-
-#right-column ul li {
-    display: inline-block;
-}
-
-#right-column ul li img {
-    width: 60px;
+#righthug {
+    width: 550px;
 }
 
 #port1 {
@@ -199,11 +190,6 @@ float: right;
 }
 #port5 {
     background: url('../images/port5.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#port6 {
-    background: url('../images/port6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
